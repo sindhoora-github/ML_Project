@@ -16,11 +16,11 @@ Please enter the sensor and configuration data below to get a prediction.
 """)
 
 # User input
-engine_rpm = st.number_input("Engine rpm)", min_value=250.0, max_value=400.0, value=298.0, step=0.1)
+engine_rpm = st.number_input("Engine rpm", min_value=250.0, max_value=400.0, value=298.0, step=0.1)
 lub_oil_pres = st.number_input("Lub oil pressure", min_value=250.0, max_value=500.0, value=324.0, step=0.1)
 fuel_pres= st.number_input("Fuel pressure", min_value=0, max_value=3000, value=1400)
 coolant_pres = st.number_input("Coolant pressure", min_value=0.0, max_value=100.0, value=40.0, step=0.1)
-lub_oil_temp = st.number_input("Lub oil temp", min_value=0, max_value=300, value=10)
+lub_oil_temp = st.number_input("lub oil temp", min_value=0, max_value=300, value=10)
 coolant_temp = st.number_input("Coolant temp", min_value=0, max_value=300, value=10)
 
 # Assemble input into DataFrame
@@ -29,7 +29,7 @@ input_data = pd.DataFrame([{
     'Lub oil pressure': lub_oil_pres,
     'Fuel pressure': fuel_pres,
     'Coolant pressure': coolant_pres,
-    'Lub oil temp': lub_oil_temp,
+    'lub oil temp': lub_oil_temp,
     'Coolant temp': coolant_temp
 }])
 
