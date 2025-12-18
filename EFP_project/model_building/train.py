@@ -39,7 +39,7 @@ numeric_features = [
     'Lub oil pressure',
     'Fuel pressure',
     'Coolant pressure',
-    'lub oil temp',
+    'Lub oil temp',
     'Coolant temp'
 ]
 
